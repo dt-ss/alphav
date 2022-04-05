@@ -22,7 +22,7 @@ setuptools.setup(
     description="alpha vantage api wrapper",
     url="https://github.com/dt-ss/alphav",
     python_requires='>=3.7',
-    version="1.0.4",
+    version="1.0.5",
     packages=setuptools.find_packages(),
     long_description=long_description,
     long_description_content_type='text/markdown',
