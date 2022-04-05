@@ -1,4 +1,8 @@
 import setuptools
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="alphav",
@@ -18,8 +22,10 @@ setuptools.setup(
     description="alpha vantage api wrapper",
     url="https://github.com/dt-ss/alphav",
     python_requires='>=3.7',
-    version="1.0.2",
+    version="1.0.4",
     packages=setuptools.find_packages(),
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

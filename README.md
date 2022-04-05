@@ -10,9 +10,12 @@ The data is then saved for the next property calls.
 # Example
 ```python
 from alphav import Symbol
+import os
 
-# generate symbple
+# generate symbol
+apikey = os.environ.get('API_KEY')
 s = Symbol('IBM', apikey)
+
 # print the data it provides
 print(s.balance_sheet)
 print(s.earnings)
