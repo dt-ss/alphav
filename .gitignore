@@ -1,0 +1,15 @@
+ # ------------------- generic ------------------------
+# jetbrains
+.idea/
+.local/
+# python caches and venv
+*.pyc
+__pycache__/
+*.egg-info/
+venv/
+.env
+
+# log and config
+*.log
+.log/
+.config/
